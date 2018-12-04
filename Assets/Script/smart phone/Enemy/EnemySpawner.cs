@@ -24,7 +24,7 @@ public class EnemySpawner : EnemyBase {
     private float spawnPosYRangeMax;//スポーン位置y最大
 
     [SerializeField]
-    private float spawnPosYRangeMin;//スポーン位置x最小
+    private float spawnPosYRangeMin;//スポーン位置y最小
 
     [SerializeField]
     private float spawnPosX; //スポーン位置x
