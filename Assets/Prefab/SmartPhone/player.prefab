@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   length: 11.8
-  speed: 2
+  speed: 0.7
 --- !u!198 &198768687293143786
 ParticleSystem:
   m_ObjectHideFlags: 1
