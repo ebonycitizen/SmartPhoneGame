@@ -26,6 +26,13 @@ public class PlayerInputManager : MonoBehaviour {
     private bool right=false;
     private bool left=false;
 
+    [SerializeField]
+    GameObject white;
+
+    [SerializeField]
+    GameObject black;
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -34,9 +41,27 @@ public class PlayerInputManager : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-       PakuriInput();
+        //PakuriInput();
+        //Pakuri2Input();
         //SubInput();
         //MainInput();
+
+        OtherInput();
+    }
+
+    private void OtherInput()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            white.SetActive(true);
+            black.SetActive(false);
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            white.SetActive(false);
+            black.SetActive(true);
+        }
     }
 
     private void PakuriInput()
@@ -48,6 +73,22 @@ public class PlayerInputManager : MonoBehaviour {
         if (Input.GetMouseButtonUp(0))
         {
             GetComponent<OtherPlayerController>().Play();
+        }
+        if (Input.GetMouseButton(0))
+        {
+
+        }
+    }
+
+    private void Pakuri2Input()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            GetComponent<OtherPlayerController>().Play();
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            GetComponent<OtherPlayerController>().Pause();
         }
         if (Input.GetMouseButton(0))
         {
