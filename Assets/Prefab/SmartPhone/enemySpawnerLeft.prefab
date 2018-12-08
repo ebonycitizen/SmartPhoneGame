@@ -55,8 +55,8 @@ MonoBehaviour:
   enemyPrefab: {fileID: 1048428509079066, guid: 99a88c93b462a10429368dbfdb622574,
     type: 2}
   spawnAngleZ: 180
-  spawnTimeRangeMax: 4.5
-  spawnTimeRangeMin: 2
+  spawnTimeRangeMax: 6.5
+  spawnTimeRangeMin: 3
   spawnPosYRangeMax: 10
   spawnPosYRangeMin: -10
   spawnPosX: -9

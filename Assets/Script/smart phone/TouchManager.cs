@@ -63,7 +63,7 @@ public class TouchManager{
             {
                 TouchCount = 1;
                 TouchPosition[0] = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                SetSide();
+                //SetSide();
             }
             //前回タップした位置を保存
             if (PhaseTouch[0] == TouchPhase.Began)
@@ -84,7 +84,7 @@ public class TouchManager{
                 touch[i] = Input.GetTouch(i);
                 TouchPosition[i] = Camera.main.ScreenToWorldPoint(touch[i].position);
                 PhaseTouch[i] = touch[i].phase;
-                SetSide(i);
+                //SetSide(i);
             }
         }
         for (int i = 0; i < TouchCount; i++)
